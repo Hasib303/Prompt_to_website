@@ -231,13 +231,6 @@ Try these example queries:
 "Make an about us page"
 ```
 
-## 📊 Performance (Typical)
-
-- **Setup Time**: ~1–3 minutes on first run (model download)
-- **Query Time**: 3–25 seconds (LLM) / <2 seconds (structured fallback)
-- **Memory**: ~6–10GB for Qwen 3B; ~4–6GB for Qwen 1.5B
-- **Storage**: ~2–6GB (models + data)
-
 ## 🔧 Customization
 
 ### Adding New Components
@@ -270,24 +263,6 @@ In `config.py`, change:
 ```python
 TOP_K_RESULTS = 7  # Retrieve more components
 ```
-
-## 🐛 Troubleshooting
-
-### Model stalls after "Generating with LLM"
-- Ensure you installed: `pip install -U transformers accelerate tiktoken`
-- Reduce `MAX_TOKENS` in `config.py` to 400–600
-- Try smaller model: `Qwen/Qwen2.5-Coder-1.5B-Instruct`
-- If it still fails, the structured fallback will produce a complete page automatically
-
-### FAISS index not found
-Delete the data directory and run again:
-```bash
-rm -rf data/
-python main.py
-```
-
-### Model download is slow
-First run downloads weights. Subsequent runs use cache.
 
 ## 📝 Technical Details
 
