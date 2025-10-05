@@ -11,13 +11,6 @@ A Retrieval-Augmented Generation (RAG) application that generates complete, sing
 - **Local Execution**: Runs locally (CPU/GPU); downloads models on first use
 - **49 Pre-built Components**: Based on Keep Design components, covering foundations, UI, and dashboard patterns
 
-## 📋 Requirements
-
-- Python 3.10+
-- macOS/Linux/Windows
-- 12GB RAM recommended for Qwen 3B (use 1.5B if memory constrained)
-- ~6GB free disk space (models + data)
-
 ## 🔧 Installation
 
 ### Step 1: Create Project Directory
