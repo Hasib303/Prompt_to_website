@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create a blog website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">Brand</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#articles" class="text-gray-700 hover:text-blue-600 transition">Articles</a>
+                    <a href="#categories" class="text-gray-700 hover:text-blue-600 transition">Categories</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-600 to-teal-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">Tech Blog</h1>
+            <p class="text-xl mb-8">Insights, tutorials, and stories about web development</p>
+            <div class="max-w-xl mx-auto">
+                <div class="relative">
+                    <input type="text" placeholder="Search articles..." class="w-full px-6 py-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"/>
+                    <button class="absolute right-2 top-2 bg-green-600 text-white px-6 py-2 rounded-lg">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<main class="container mx-auto px-6 py-12">
+
+    <!-- Featured Posts -->
+    <section class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Latest Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-2 text-sm text-gray-500 mb-2">
+                        <span>May 15, 2024</span>
+                        <span>•</span>
+                        <span>5 min read</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Getting Started with React Hooks</h3>
+                    <p class="text-gray-600 mb-4">Learn how to use React Hooks to manage state and side effects in your functional components.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+                </div>
+            </article>
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-r from-green-500 to-teal-500"></div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-2 text-sm text-gray-500 mb-2">
+                        <span>May 10, 2024</span>
+                        <span>•</span>
+                        <span>8 min read</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Building RESTful APIs with Node.js</h3>
+                    <p class="text-gray-600 mb-4">A comprehensive guide to creating scalable REST APIs using Express and Node.js.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Browse by Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="#" class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                <div class="text-3xl mb-2">⚛️</div>
+                <div class="font-semibold text-gray-800">React</div>
+                <div class="text-sm text-gray-500">24 posts</div>
+            </a>
+            <a href="#" class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                <div class="text-3xl mb-2">📗</div>
+                <div class="font-semibold text-gray-800">Node.js</div>
+                <div class="text-sm text-gray-500">18 posts</div>
+            </a>
+            <a href="#" class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                <div class="text-3xl mb-2">🎨</div>
+                <div class="font-semibold text-gray-800">CSS</div>
+                <div class="text-sm text-gray-500">15 posts</div>
+            </a>
+            <a href="#" class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                <div class="text-3xl mb-2">🗄️</div>
+                <div class="font-semibold text-gray-800">Database</div>
+                <div class="text-sm text-gray-500">12 posts</div>
+            </a>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Brand</h3>
+                    <p class="text-gray-400">Building amazing web experiences.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
